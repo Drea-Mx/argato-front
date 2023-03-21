@@ -1,5 +1,4 @@
 #home {
-    margin-top: 70px;
     .hero {
         display: flex;
         height: 70vh;
@@ -30,12 +29,14 @@
                 width: 100%;
             }
             &--h1 {
-                width: 390px;
+                width: 550px;
                 font-family: var(--tituloLight);
                 position: relative;
                 right: 100px;
+                text-transform: uppercase;
                 @media (max-width: 900px) {
-                    right: 200px;
+                    right: auto !important;
+                    left: -350px;
                 }
                 @media (max-width: 680px) {
                     position: static;
