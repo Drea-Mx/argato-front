@@ -94,7 +94,7 @@ $(document).ready(function(){
         arrows: false,
         autoplay: true,
         fade: true,
-        cssEase: 'linear' 
+        cssEase: 'linear',
     });
 
 
@@ -117,15 +117,99 @@ $(document).ready(function(){
     $('section.secondaryMenu ul.links li button.link1').on('click', function(){
         $('section.secondaryMenu .abajo .section .link1').show()
         $('section.secondaryMenu .abajo .section .link2').hide('fade', 450)
-        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo .section .link3').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link4').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link5').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link6').hide('fade', 450)
         $('section.secondaryMenu .abajo').addClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo').removeClass('link3')
+        $('section.secondaryMenu .abajo').removeClass('link4')
+        $('section.secondaryMenu .abajo').removeClass('link5')
+        $('section.secondaryMenu .abajo').removeClass('link6')
 
     })
     $('section.secondaryMenu ul.links li button.link2').on('click', function(){
         $('section.secondaryMenu .abajo .section .link1').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link3').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link4').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link5').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link6').hide('fade', 450)
         $('section.secondaryMenu .abajo .section .link2').show()
         $('section.secondaryMenu .abajo').removeClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link3')
+        $('section.secondaryMenu .abajo').removeClass('link4')
+        $('section.secondaryMenu .abajo').removeClass('link5')
+        $('section.secondaryMenu .abajo').removeClass('link6')
         $('section.secondaryMenu .abajo').addClass('link2')
+
+    })
+
+    $('section.secondaryMenu ul.links li button.link3').on('click', function(){
+        $('section.secondaryMenu .abajo .section .link1').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link2').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link3').show()
+        $('section.secondaryMenu .abajo .section .link4').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link5').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link6').hide('fade', 450)
+        $('section.secondaryMenu .abajo').removeClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo').addClass('link3')
+        $('section.secondaryMenu .abajo').removeClass('link4')
+        $('section.secondaryMenu .abajo').removeClass('link5')
+        $('section.secondaryMenu .abajo').removeClass('link6')
+
+    })
+    $('section.secondaryMenu ul.links li button.link4').on('click', function(){
+        $('section.secondaryMenu .abajo .section .link1').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link2').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link3').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link4').show()
+        $('section.secondaryMenu .abajo .section .link5').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link6').hide('fade', 450)
+        $('section.secondaryMenu .abajo').removeClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo').removeClass('link3')
+        $('section.secondaryMenu .abajo').addClass('link4')
+        $('section.secondaryMenu .abajo').removeClass('link5')
+        $('section.secondaryMenu .abajo').removeClass('link6')
+
+    })
+    $('section.secondaryMenu ul.links li button.link5').on('click', function(){
+        $('section.secondaryMenu .abajo .section .link1').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link2').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link3').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link4').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link5').show()
+        $('section.secondaryMenu .abajo .section .link6').hide('fade', 450)
+        $('section.secondaryMenu .abajo').removeClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo').removeClass('link3')
+        $('section.secondaryMenu .abajo').removeClass('link4')
+        $('section.secondaryMenu .abajo').addClass('link5')
+        $('section.secondaryMenu .abajo').removeClass('link6')
+
+    })
+    $('section.secondaryMenu ul.links li button.link6').on('click', function(){
+        $('section.secondaryMenu .abajo .section .link1').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link2').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link3').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link4').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link5').hide('fade', 450)
+        $('section.secondaryMenu .abajo .section .link6').show()
+        $('section.secondaryMenu .abajo').removeClass('link1')
+        $('section.secondaryMenu .abajo').removeClass('link2')
+        $('section.secondaryMenu .abajo').removeClass('link3')
+        $('section.secondaryMenu .abajo').removeClass('link4')
+        $('section.secondaryMenu .abajo').removeClass('link5')
+        $('section.secondaryMenu .abajo').addClass('link6')
+    })
+
+
+    $('button.mezcaleros').on('click', function () {
+        $('section.sliderCover').removeClass('in');
+        $('section.sliderMasters').addClass('in');
+        $('section.sliderCover').hide();
 
     })
 

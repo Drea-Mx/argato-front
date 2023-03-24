@@ -1,7 +1,88 @@
 #masters {
+    .in {
+        visibility: visible !important;
+    }
+    section.sliderCover {
+        visibility: hidden;
+        position: absolute;
+        transition: all 350ms ease-in-out;
+        @media (max-width: 750px) {
+            display: none;
+        }
+        .main {
+            display: flex;
+                align-items: center;
+                @media (max-width: 750px) {
+                    flex-direction: column;
+                }
+            .text {
+                width: 50%;
+                padding: 50px;
+                text-align: right;
+                @media (max-width: 750px) {
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px;
+                }
+                h2 {
+                    font-size: 5vw;
+                    font-family: var(--tituloLight);
+                    text-transform: uppercase;
+                    text-align: right;
+                    margin-bottom: 50px;
+                    color: var(--red);
+                    @media (max-width: 750px) {
+                        text-align: center;
+                    }
+                }
+                p {
+                    text-align: right;
+                    max-width: 600px;
+                    margin-right: 0;
+                    margin-left: auto;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    font-family: var(--ttMedium);
+                    font-weight: normal;
+                    @media (max-width: 750px) {
+                        text-align: center;
+                        max-width: 100%;
+                    }
+                }
+                button {
+                    background-color: var(--red);
+                    padding: 10px 25px;
+                    outline: none;
+                    border: none;
+                    text-transform: uppercase;
+                    color: var(--white);
+                    font-family: var(--bold);
+                    margin-top: 50px;
+                    cursor: pointer;
+                }
+            }
+            .image {
+                width: 50%;
+                padding: 50px;
+                @media (max-width: 750px) {
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+            .image {
+                padding: 50px 100px;
+                padding: 20px;
+
+            }
+        }
+    }
     section.sliderMasters {
+        visibility: hidden;
         margin-top: 100px;
         margin-bottom: 100px;
+        @media (max-width: 750px) {
+            visibility: visible;
+        }
         .container {
             .slide {
                 display: flex;
@@ -56,47 +137,7 @@
                     }
                 }
             }
-            .main {
-                .text {
-                    width: 50%;
-                    padding: 50px;
-                    @media (max-width: 750px) {
-                        width: 100%;
-                        text-align: center;
-                        padding: 20px;
-                    }
-                    h2 {
-                        font-size: 5vw;
-                        font-family: var(--tituloLight);
-                        text-transform: uppercase;
-                        text-align: right;
-                        margin-bottom: 50px;
-                        color: var(--red);
-                        @media (max-width: 750px) {
-                            text-align: center;
-                        }
-                    }
-                    p {
-                        text-align: right;
-                        max-width: 600px;
-                        margin-right: 0;
-                        margin-left: auto;
-                        text-transform: uppercase;
-                        line-height: 1.2;
-                        font-family: var(--ttMedium);
-                        font-weight: normal;
-                        @media (max-width: 750px) {
-                            text-align: center;
-                            max-width: 100%;
-                        }
-                    }
-                }
-                .image {
-                    padding: 50px 100px;
-                    padding: 20px;
-
-                }
-            }
+            
         }
     }
 }
