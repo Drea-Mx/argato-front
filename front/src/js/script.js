@@ -95,6 +95,16 @@ $(document).ready(function(){
         autoplay: true,
         fade: true,
         cssEase: 'linear',
+        pauseOnHover: false
+    });
+    $('#farm section.secondary-movil .slider').slick({
+        slidesToShow: 1,
+        arrows: true,
+        autoplay: false,
+        cssEase: 'linear',
+        pauseOnHover: false,
+        prevArrow: $('#farm section.secondary-movil .prev'),
+        nextArrow: $('#farm section.secondary-movil .next'),
     });
 
 

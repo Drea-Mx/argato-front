@@ -1,5 +1,8 @@
 #farm {
     section.secondaryMenu {
+        @media (max-width: 800px) {
+            display: none;
+        }
         .arriba {
             display: flex;
             .iz {
